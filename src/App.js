@@ -5,7 +5,7 @@ function App() {
   return (
     <div >
       <header className="navbar navbar-dark bg-dark text-center col" id='widt'>
-        <strong className="navbar-brand col-11">
+        <strong className="navbar-brand col-12">
           TRADING.COM
         </strong>
       </header>
