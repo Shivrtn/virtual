@@ -55,15 +55,15 @@ function Chart(props) {
   useEffect(()=>{pvalue(data[iloc].close)},[iloc])
 
 const bought=()=>{
-    console.log(price);
-    if((pos===0)){bvalue(price);pov(pos+1)}
-    else if(pos===-1){pov(pos+1);bvalue(price);(fv(fund+(fund*(sell-price)/sell) ))}}
 
-const sold=()=>{    console.log(price);
+if(price!=0)  {   if((pos===0)){bvalue(price);pov(pos+1)}
+    else if(pos===-1){pov(pos+1);bvalue(price);(fv(fund+(fund*(sell-price)/sell) ))}}
+}
+const sold=()=>{  if(price!=0){ 
 
     if((pos===0)){svalue(price);pov(pos-1)}
     else if(pos===1){pov(pos-1);svalue(price);fv(fund+(fund*((price-buy)/buy)))}}
-
+}
   return (
     
       <div className=' border-danger rounded-0'>
