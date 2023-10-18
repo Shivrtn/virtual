@@ -73,7 +73,7 @@ const sold=()=>{  if(price!==0){
            <h3 className='col-3 bg-secondary m-auto'> Pos:{pos}</h3>
        
         
-        <div ref={chartContainerRef} style={{ width: '87vw', height: '400px',marginLeft:'5px' }} />
+        <div ref={chartContainerRef} style={{ width: '93vw', height: '400px',marginLeft:'5px' }} />
       
       </div>
     
