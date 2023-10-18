@@ -19,7 +19,7 @@ function Fetch(){
     const year = currentDate.getFullYear();
     const formattedDate = `${year}-${month}-${day}`;
 
-    const url = 'http://localhost:2000/post_data';
+    const url = 'https://backend-2-0-en0h.onrender.com/post_data';
 
 // Define the text data you want to send
     function ow(){
