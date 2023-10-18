@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Fetch from './fetch';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <header >
+      <strong>
+        TRADING.COM
+      </strong>
+    </header>
+    <div>
+      <div className='mb-1 shadow'><h1 className="bg-primary text-success font-monospace m-auto">Practice on historic data</h1></div>
+
+      <Fetch/>
+    </div>
     </div>
   );
 }
