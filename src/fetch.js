@@ -116,20 +116,17 @@ return(<div>
     </form>)
     :(<div>
         
-        <div className=' col d-flex '>
+        <div className=' col d-flex mb-1 bg-danger '>
             <h3 className=' col-10 bg-info m-auto rounded-4  '>
             
                 <input id='ser'
                 placeholder='enter symbol eg. tcs,ioc'
                  defaultValue={nam}
                 onChange={()=>{nvalue(document.getElementById('ser').value)}}
-                 className=' mx-4 rounded-4'></input>
+                 className=' p-1  mx-2 rounded-4'></input>
                 <button 
                 className='rounded-2'
-                onClick={()=>{
-                    
-
-                   
+                onClick={()=>{ 
                     process(document.getElementById('ser').value,
                     "1d","2021-01-01",formattedDate
                  )
@@ -143,7 +140,10 @@ return(<div>
     </div>
         )}
 
-        {(data.length!==0)?(<Chart data={data} show={chart}/>):(<div className='mx-3'>
+        {(data.length!==0)?(<div className=' w-25'>
+        <Chart  data={data} show={chart}/>
+        </div>
+        ):(<div className='mx-3'>
             <h1 className=' bg-secondary rounded-1 mt-2'>bad request, enter <strong>NSE</strong> symbol date and interval</h1>
         <br/>
         <div className='mx-3'>

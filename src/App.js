@@ -1,20 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import Fetch from './fetch';
 
 function App() {
   return (
-    <div className="App">
-    <header >
-      <strong>
-        TRADING.COM
-      </strong>
-    </header>
-    <div>
-      <div className='mb-1 shadow'><h1 className="bg-primary text-success font-monospace m-auto">Practice on historic data</h1></div>
-
-      <Fetch/>
-    </div>
+    <div >
+      <header className="navbar navbar-dark bg-dark text-center col" id='widt'>
+        <strong className="navbar-brand col-11">
+          TRADING.COM
+        </strong>
+      </header>
+      <div className="mt-1">
+        <div className="card  bg-warning mb-1 shadow-lg">
+          
+        </div>
+        <Fetch />
+      </div>
     </div>
   );
 }

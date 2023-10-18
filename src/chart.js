@@ -17,10 +17,8 @@ function Chart(props) {
   const data = props.data;
 
   useEffect(() => {
-    chartRef.current = createChart(chartContainerRef.current, {
-      width: 800,
-      height: 400,
-    });
+    chartRef.current = createChart(chartContainerRef.current
+     );
 
     const candlestickSeries = chartRef.current.addCandlestickSeries();
     candlestickSeries.setData(data.slice(0, 10));
@@ -56,26 +54,26 @@ function Chart(props) {
 
 const bought=()=>{
 
-if(price!=0)  {   if((pos===0)){bvalue(price);pov(pos+1)}
+if(price!==0)  {   if((pos===0)){bvalue(price);pov(pos+1)}
     else if(pos===-1){pov(pos+1);bvalue(price);(fv(fund+(fund*(sell-price)/sell) ))}}
 }
-const sold=()=>{  if(price!=0){ 
+const sold=()=>{  if(price!==0){ 
 
     if((pos===0)){svalue(price);pov(pos-1)}
     else if(pos===1){pov(pos-1);svalue(price);fv(fund+(fund*((price-buy)/buy)))}}
 }
   return (
     
-      <div className=' border-danger rounded-0'>
-        <div className=' d-flex'>
-        Balance:<h3 className=' mx-3'>{fund}</h3>
-            pos:<h3 className=' mx-3'>{pos}</h3>
+      <div className=' d-inline-flex border-danger row rounded-0'>
+         <button className='h-auto  m-auto col-3 w-auto bg-success' onClick={ bought
+            }>buy</button>
+            <button className='m-auto h-auto col-3 w-auto bg-danger' onClick={sold}>sell</button>
        
-            <button className=' mx-3 w-25' onClick={ bought
-}>buy</button>
-            <button className=' mx-3 w-25' onClick={sold}>sell</button>
-        </div>
-        <div ref={chartContainerRef} />
+             <h3 className='col-5 mx-auto bg-warning w-auto m-auto'>Funds:{fund}</h3>
+           <h3 className='col-3 bg-secondary m-auto'> Pos:{pos}</h3>
+       
+        
+        <div ref={chartContainerRef} style={{ width: '87vw', height: '400px',marginLeft:'5px' }} />
       
       </div>
     
