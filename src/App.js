@@ -6,7 +6,7 @@ function App() {
     <div >
       <header className="navbar navbar-dark bg-dark text-center col" id='widt'>
         <strong className="navbar-brand col-12">
-          TRADING.COM
+          FAST TRADING
         </strong>
       </header>
       <div className="mt-1">

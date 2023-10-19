@@ -69,7 +69,7 @@ const sold=()=>{  if(price!==0){
             }>buy</button>
             <button className='m-auto h-auto col-3 w-auto bg-danger' onClick={sold}>sell</button>
        
-             <h3 className='col-5 mx-auto bg-warning w-auto m-auto'>Funds:{fund}</h3>
+             <h3 className='col-5 mx-auto bg-warning w-auto m-auto'>Funds:{fund.toFixed(2)}</h3>
            <h3 className='col-3 bg-secondary m-auto'> Pos:{pos}</h3>
        
         
