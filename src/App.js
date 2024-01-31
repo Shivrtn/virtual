@@ -14,6 +14,11 @@ function App() {
           
         </div>
         <Fetch />
+        <div className='bg-dark p-1'>
+          <h5 style={{color:'purple'}}>created by </h5>
+          <h5 style={{color:'white'}}>shiv</h5>
+
+        </div>
       </div>
     </div>
   );
