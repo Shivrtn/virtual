@@ -117,15 +117,15 @@ return(<div>
     :(<div>
         
         <div className=' col d-flex mb-1 bg-danger '>
-            <h3 className=' col-10 bg-info m-auto rounded-4  '>
+            <h3 className=' col-10 row bg-info m-auto rounded-4  '>
             
                 <input id='ser'
                 placeholder='enter symbol eg. tcs,ioc'
                  defaultValue={nam}
                 onChange={()=>{nvalue(document.getElementById('ser').value)}}
-                 className=' p-1  mx-2 rounded-4'></input>
+                 className=' p-1 col mx-2 rounded-4'></input>
                 <button 
-                className='rounded-2'
+                className=' col-3 rounded-2'
                 onClick={()=>{ 
                     process(document.getElementById('ser').value,
                     "1d","2021-01-01",formattedDate
