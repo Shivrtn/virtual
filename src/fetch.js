@@ -125,7 +125,7 @@ return(<div>
                 onChange={()=>{nvalue(document.getElementById('ser').value)}}
                  className=' p-1 col mx-2 rounded-4'></input>
                 <button 
-                className=' col-3 rounded-2'
+                className=' col-3 rounded-2 px-1'
                 onClick={()=>{ 
                     process(document.getElementById('ser').value,
                     "1d","2021-01-01",formattedDate
@@ -135,7 +135,9 @@ return(<div>
 
                 </h3>
             <button className=' w-auto rounded bg-warning '
-             onClick={ow}>Setting</button>
+             onClick={ow}>
+                <img src='gear.png' width="35" height="35"></img>
+             </button>
              </div>
     </div>
         )}

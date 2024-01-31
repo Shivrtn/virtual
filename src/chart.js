@@ -93,8 +93,8 @@ const sold=()=>{  if(price!==0){
         
              <h3 className='col-3 mx-auto bg-warning w-auto m-auto'>Funds:{fund.toFixed(1)}</h3>
              <h3 className='col-1 '>p&l:</h3>
-              <h3 className='col-1 mx-2 ' style={{color:(color)}}>{pl.toFixed(1)}</h3>
-              <h3 className='col-2 bg-secondary'> Pos:{pos}</h3>
+              <h3 className='col-2 mx-2 ' style={{color:(color)}}>{pl.toFixed(1)}</h3>
+              <h3 className='col-2 bg-secondary px-1'> Pos:{pos}</h3>
               <div className='col'></div>
             <div className='row'>
            <button className='h-auto col-3  m-auto  w-auto bg-success' onClick={ bought
